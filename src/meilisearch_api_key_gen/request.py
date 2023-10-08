@@ -13,4 +13,7 @@ def make_request(masterKey: str, address: str, actions: list, indexes: list,
         headers={'Content-Type': 'application/json', 'Authorization': f'Bearer {masterKey}'}, 
         data=json.dumps(payload),
     )
-    return r
+    if(r.status_code != 201): 
+        print(r)
+    response = json.loads(r.text)
+    return response
