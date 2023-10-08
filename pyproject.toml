@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meilisearch_api_key_gen"
+version = "0.0.1"
+authors = [{ name = "predare", email = "predare12000@gmail.com" }]
+description = "A package designed to generate the Meilisearch API key and return it to the user"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/predare/meilisearch_api_key_gen"
+"Bug Tracker" = "https://github.com/predare/meilisearch_api_key_gen/issues"
